@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/cFiles/file.h to edit this template
  */
 
-/* 
+/*
  * File:   para.h
  * Author: lk
  *
@@ -18,9 +18,9 @@ extern "C" {
 #endif
 
 #define FROM "<dummybeartest@gmail.com>" // pass it to smtp from
-#define TO "<1905025cse@cit.edu.in>" // pass it to smtp from
-#define MAIL_HEADER_FROM "lk<dummybeartest@gmail.com>" // pass it to header  
-#define MAIL_HEADER_TO "Mini<1905025cse@cit.edu.in>"   // pass it to header
+#define TO "<1905008cse@cit.edu.in>" // pass it to smtp from
+#define MAIL_HEADER_FROM "lk<dummybeartest@gmail.com>" // pass it to header
+#define MAIL_HEADER_TO "Mini<1905008cse@cit.edu.in>"   // pass it to header
 #define UID "dummybeartest@gmail.com"
 #define PWD "123456dummy789"
 #define smtp_server_url "smtp.gmail.com"
@@ -31,4 +31,3 @@ extern "C" {
 #endif
 
 #endif  /* PARA_H */
-
