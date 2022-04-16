@@ -19,7 +19,7 @@ extern "C" {
 
 #define FROM "<dummybeartest@gmail.com>" // pass it to smtp from
 #define TO "<1905008cse@cit.edu.in>" // pass it to smtp from
-#define MAIL_HEADER_FROM "lk<dummybeartest@gmail.com>" // pass it to header
+#define MAIL_HEADER_FROM "mouli <dummybeartest@gmail.com>" // pass it to header
 #define MAIL_HEADER_TO "Mini<1905008cse@cit.edu.in>"   // pass it to header
 #define UID "dummybeartest@gmail.com"
 #define PWD "123456dummy789"

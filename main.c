@@ -1,15 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/cFiles/main.c to edit this template
- */
-
-/* 
- * File:   main.c
- * Author: lk
- *
- * Created on 15 April, 2022, 11:33 PM
- */
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <sys/socket.h>
@@ -25,9 +13,6 @@
 #include <openssl/ssl.h>
 #include <openssl/err.h>
 
-/*
- * 
- */
 
 char * MailHeader(const char* from, const char* to, const char* subject, const char* mime_type, const char* charset) {
 
@@ -95,7 +80,7 @@ int main(int argc, char** argv) {
                 if (SSL_connect(ssl) != 1) {
                     BIO_printf(obj_out, "SLL session not created");
                 } else {
-                    char *header = MailHeader(MAIL_HEADER_FROM, MAIL_HEADER_TO, "Hello Its a test Mail.", "text/plain", "US-ASCII");
+                    char *header = MailHeader(MAIL_HEADER_FROM, MAIL_HEADER_TO, "asdsad asdas dams dasm dkawndkaw dakwndkawndaw dkawndkaw", "text/plain", "US-ASCII");
 
                     int recvd = 0;
                     const char recv_buff[4768];
@@ -104,12 +89,12 @@ int main(int argc, char** argv) {
                     recvd += sdsd;
 
                     char buff[1000];
-                    strcpy(buff, "EHLO "); 
+                    strcpy(buff, "EHLO ");
                     strcat(buff, domain_name);
                     strcat(buff, "\r\n");
                     SSL_write(ssl, buff, strlen(buff));
                     sdsd = SSL_read(ssl, recv_buff + recvd, sizeof (recv_buff) - recvd);
-                    recvd += sdsd;                 
+                    recvd += sdsd;
 
                     char _cmd2[1000];
                     strcpy(_cmd2, "AUTH LOGIN\r\n");
@@ -155,7 +140,7 @@ int main(int argc, char** argv) {
 
                     SSL_write(ssl, header, strlen(header));
                     char _cmd8[1000];
-                    strcpy(_cmd8, "Hi this is a sample mail!!!");
+                    strcpy(_cmd8, "djSAGDSKAdg dghasgdyAGdydv yafdA wdyufdafd utwfdFd wdfuafd duw dfawtdfua");
                     SSL_write(ssl, _cmd8, sizeof (_cmd8));
                     char _cmd9[1000];
                     strcpy(_cmd9, "\r\n.\r\n.");
